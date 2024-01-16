@@ -1,0 +1,250 @@
+
+{{ 'section-comparison.css' | asset_url | stylesheet_tag }}
+
+<div class="us-vs-brands page-width" data-section="us-vs-brands">
+  <div class="us-vs-brands-grid">
+    <div class="us-vs-brands-left">
+      <h2 class="uvb-title">{{ section.settings.title }}</h2>
+      <p class="uvb-desc">{{ section.settings.desc }}</p>
+      <div class="uvb-features">
+        {% if section.settings.feature1 != blank %}
+          <span>{% render 'icon-check-circled' %}  {{ section.settings.feature1 }}</span>
+        {% endif %}
+        {% if section.settings.feature2 != blank %}
+          <span>{% render 'icon-check-circled' %}  {{ section.settings.feature2 }}</span>
+        {% endif %}  
+        {% if section.settings.feature3 != blank %}
+          <span>{% render 'icon-check-circled' %}  {{ section.settings.feature3 }}</span>
+        {% endif %} 
+         {% if section.settings.feature4 != blank %}
+          <span>{% render 'icon-check-circled' %}  {{ section.settings.feature4 }}</span>
+        {% endif %} 
+      </div>
+      
+      {% if section.settings.btn_title != blank %}
+      <a href="{{ section.settings.btn_link }}" class="btn animatedbtn" data-router-disabled="">{{ section.settings.btn_title }}</a>
+      {% endif %} 
+    </div>
+
+    
+    <div class="us-vs-brands-right">
+      <div class="vs-table slide">
+            <div class="vs-left">
+                <div class="block"></div>
+                  <div class="block"><p>{{ section.settings.compare1 }}</p></div>
+                  <div class="block"><p>{{ section.settings.compare2 }}</p></div>
+                  <div class="block"><p>{{ section.settings.compare3 }}</p></div>
+                  <div class="block"><p>{{ section.settings.compare4 }}</p></div>
+                  <div class="block"><p>{{ section.settings.compare5 }}</p></div>
+                  <div class="block"><p>{{ section.settings.compare6 }}</p></div>                    
+            </div>
+          
+            <div class="vs-right">
+                <div class="col-left">                    
+                  <div class="block">
+                      <img class="logo" src="{{ section.settings.image | img_url: '400x' }}"  alt="{{ image.alt }}" width="" height="">
+                  </div>                  
+                  <div class="block">
+                    <div class="check-wrapper">
+                      {% render 'icon-check' %}
+                    </div>
+                  </div>
+
+                  <div class="block">
+                    <div class="check-wrapper check">
+                        {% render 'icon-check' %}
+                    </div>
+                  </div>
+
+                  <div class="block">
+                    <div class="check-wrapper check">
+                       {% render 'icon-check' %}
+                    </div>
+                  </div>
+
+                  <div class="block">
+                    <div class="check-wrapper check">
+                      {% render 'icon-check' %}
+                    </div>
+                  </div>
+
+                  <div class="block">
+                    <div class="check-wrapper check">
+                        {% render 'icon-check' %}
+                    </div>
+                  </div>
+
+                  <div class="block">
+                    <div class="check-wrapper check">
+                        {% render 'icon-check' %}
+                    </div>
+                  </div>
+              </div>
+              
+                <div class="col-right">
+                  <div class="block"><p>Other Brands</p></div>
+        
+                  <div class="block">
+                    <div class="check-wrapper cross">
+                      {% render 'icon-cross' %}
+                    </div>
+                  </div>
+
+                  <div class="block">
+                    <div class="check-wrapper cross">
+                      {% render 'icon-cross' %}
+                    </div>
+                  </div>
+
+                  <div class="block">
+                    <div class="check-wrapper cross">
+                      {% render 'icon-cross' %}
+                    </div>
+                  </div>
+
+                  <div class="block">
+                    <div class="check-wrapper cross">
+                      {% render 'icon-cross' %}
+                    </div>
+                  </div>
+
+                  <div class="block">
+                    <div class="check-wrapper cross">
+                      {% render 'icon-cross' %}
+                    </div>
+                  </div>
+
+                  <div class="block">
+                    <div class="check-wrapper cross">
+                      {% render 'icon-cross' %}
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>   
+  </div>  
+</div>
+<style>
+  .us-vs-brands .vs-table .vs-right .col-left,.vs-table .vs-right .col-right {
+    background:{{ section.settings.table_bg }} ;
+  }
+</style>
+{% schema %}
+{
+  "name": "Comparison",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.logo-list.settings.title.label"
+    },
+    {
+      "type": "textarea",
+      "id": "desc",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Showcase Features"
+    },
+    {
+      "type": "text",
+      "id": "feature1",
+      "label": "Feature 1"
+    },
+    {
+      "type": "text",
+      "id": "feature2",
+      "label": "Feature 2"
+    },
+    {
+      "type": "text",
+      "id": "feature3",
+      "label": "Feature 3"
+    },
+    {
+      "type": "text",
+      "id": "feature4",
+      "label": "Feature 4"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "btn_title",
+      "label": "Label"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Comparison table data"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "compare1",
+      "label": "Compare 1 Text"
+    },
+    {
+      "type": "text",
+      "id": "compare2",
+      "label": "Compare 2 Text"
+    },
+    {
+      "type": "text",
+      "id": "compare3",
+      "label": "Compare 3 Text"
+    },
+    {
+      "type": "text",
+      "id": "compare4",
+      "label": "Compare 4 Text"
+    },
+    {
+      "type": "text",
+      "id": "compare5",
+      "label": "Compare 4 Text"
+    },
+    {
+      "type": "text",
+      "id": "compare6",
+      "label": "Compare 6 Text"
+    },
+    {
+      "type": "header",
+      "content": "Comparison table data"
+    },
+    {
+      "type": "color",
+      "id": "table_bg",
+      "label": "Table background color"
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.logo-list.settings.divider.label",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}
