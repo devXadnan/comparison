@@ -1,0 +1,263 @@
+
+  .us-vs-brands {
+  
+  }
+  .us-vs-brands-left h2 {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: -0.015em;
+  }
+  .us-vs-brands-left h2 strong {
+    font-size: 52px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: -0.015em;
+  }
+  .us-vs-brands-left p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+  }
+  .us-vs-brands-left div span svg {
+    width: auto;
+  }
+  .us-vs-brands-left div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 74px;
+  }
+  .us-vs-brands-left div span {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .us-vs-brands .btn {
+    background: linear-gradient(104.28deg, #201C3E 49.91%, #0B0B16 125.85%), linear-gradient(0deg, rgba(41, 39, 62, 0.1), rgba(41, 39, 62, 0.1));
+    color: #FFFFFF;
+    margin-top: 83px;
+  }
+  .us-vs-brands .vs-table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .us-vs-brands .vs-table .vs-left {
+    display: flex;
+    border-bottom: 1px solid #262439;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-end;
+    flex: 1;
+    border-radius: 0 0 0 15px;
+  }
+  .us-vs-brands .vs-table .block:first-of-type {
+    height: 5.6745801969vw;
+    border-left: none !important;
+  }
+  .us-vs-brands .vs-table .vs-left .block {
+    display: flex;
+    border-bottom: 1px solid #262439;
+    border-left: 1px solid #262439;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    white-space: nowrap;
+    height: 4.2848870874vw;
+    padding: 18px;
+  }
+  .us-vs-brands .vs-table .vs-left .block:nth-child(2) {
+    border-top: 1px solid #262439;
+    border-radius: 15px 0 0 0;
+  }
+  .us-vs-brands .vs-table .vs-left .block:first-of-type{
+    border-bottom: none; 
+  }
+  .us-vs-brands .vs-table .block:first-of-type
+  .us-vs-brands .vs-table .vs-right .col-left .block {
+    display: flex;
+    border-bottom: 1px solid #DAD0FF;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    height: 4.2848870874vw;
+  }
+  .us-vs-brands .vs-table .vs-right .col-right .block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    height: 4.2848870874vw;
+  }
+  .us-vs-brands .left .vs-table p {
+    font-family: Fieldwork;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.015em;
+    color: #1A192E;
+  }
+  .us-vs-brands .vs-table .vs-right {
+    display: flex;
+    overflow: hidden;
+    width: 24vw;
+  }
+  .us-vs-brands .vs-table .vs-right .col-left  {
+    width: 50%;
+    border-radius: 15px 0 0;
+    border: 1px solid #DAD0FF;
+    border-right: none;
+  }
+  .us-vs-brands .vs-table .block:first-of-type {
+    height: 5.6745801969vw !important;
+  }
+  .us-vs-brands .vs-table .vs-right .block img {
+    width: auto;
+    height: 2.7793862189vw
+  }
+  .us-vs-brands .check-wrapper svg {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+  .us-vs-brands .vs-table .vs-right .col-right {
+    width: 50%;
+    border-radius: 0 15px 15px 0;
+    border: 1px solid #262439;
+  }
+  .us-vs-brands .vs-table .vs-right .block {
+    border-bottom: 1px solid #9a96bf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    height: 4.2848870874vw;
+  }
+  .us-vs-brands .vs-table .block:first-of-type {
+      height: 5.6745801969vw;
+  }
+  .uvb-features span svg path {
+    fill: var(--colorTextBody);
+  }
+  .us-vs-brands .vs-table .vs-left .block:last-of-type,
+  .us-vs-brands .vs-table .vs-right .block:last-of-type,
+  .us-vs-brands .vs-table .vs-right .block:last-of-type {
+    border-bottom: none;
+    border-radius: 0 0 0 15px;
+  }
+  .us-vs-brands .vs-table p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.015em;
+  }
+  .us-vs-brands-grid {
+    display: flex;
+    align-items: center;
+  }
+  .us-vs-brands-left {
+    width: 50%;
+  }
+  .us-vs-brands-right {
+    width: 50%;
+  }
+  .us-vs-brands .desktop-only {
+    display: flex;
+  }
+  .us-vs-brands .mobile-only {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1240px) {
+    .us-vs-brands .vs-table p {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width:767px) {
+   .us-vs-brands  .desktop-only {
+      display: none;
+    }
+    .us-vs-brands  .mobile-only {
+      display: flex;
+      margin-top: 0;
+    }
+    .us-vs-brands-grid {
+      flex-direction: column;
+      gap: 32px;
+    }
+    .us-vs-brands-left,
+    .us-vs-brands-right{
+      width: 100%;
+      text-align: center;
+    }
+    .us-vs-brands-left div {
+      display: none;
+    }
+    .us-vs-brands-left h2 {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 35px;
+      letter-spacing: -0.015em;
+    }
+    .us-vs-brands-left h2 strong {
+      font-size: 32px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 35px;
+      letter-spacing: -0.015em;
+    }
+    .us-vs-brands {
+      padding: 52px 16px;
+    }
+    .us-vs-brands .vs-table .vs-left .block,
+    .us-vs-brands .vs-table .block{
+      height: 51px !important;
+    }
+    .us-vs-brands .vs-table .block:first-of-type {
+      height: 72px !important;
+    }
+    .us-vs-brands .vs-table .vs-left .block {
+      padding-left: 16px;
+    }
+    .us-vs-brands .vs-table p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -0.015em;
+      margin-bottom: 0;
+    }
+    .us-vs-brands .vs-table .vs-right {
+      width: 50%;
+    }
+    .us-vs-brands .vs-table .vs-right .block img {
+      height: 25px;
+    }
+    .us-vs-brands .vs-table .vs-right .col-right .block:first-of-type {
+      white-space: break-spaces;
+      text-align: center;
+    }
+    .us-vs-brands .vs-table .vs-left .block {
+      border-bottom: 1px solid #DAD0FF;
+      border-left: 1px solid #DAD0FF;
+    }
+    .us-vs-brands .vs-table .vs-left .block:nth-child(2) {
+      border-top: 1px solid #DAD0FF;
+    }
+    .us-vs-brands .vs-table .vs-left,
+    .us-vs-brands .vs-table .vs-right .block{
+      border-bottom: 1px solid #DAD0FF;
+    }
+    .us-vs-brands .vs-table .vs-right .col-right {
+      border: 1px solid #DAD0FF;
+    }
+  }
