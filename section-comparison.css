@@ -123,7 +123,9 @@
   }
   .us-vs-brands .vs-table .vs-right .block img {
     width: auto;
-    height: 2.7793862189vw
+    height: 2.7793862189vw;
+    overflow: hidden;
+    max-width: 140px;
   }
   .us-vs-brands .check-wrapper svg {
     display: flex;
